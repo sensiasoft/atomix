@@ -1,0 +1,11 @@
+
+description = 'Atomix Agent'
+dependencies {
+  compile project(':atomix-core')
+  compile project(':atomix-raft')
+  compile project(':atomix-gossip')
+  compile project(':atomix-primary-backup')
+  compile project(':atomix-rest')
+    compile group: 'net.sourceforge.argparse4j', name: 'argparse4j', version:'0.7.0'
+    compile group: 'org.jboss.resteasy', name: 'resteasy-jackson2-provider', version:'3.1.4.Final'
+}

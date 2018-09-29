@@ -1,0 +1,9 @@
+
+description = 'Atomix Cluster'
+dependencies {
+  compile project(':atomix-utils')
+    compile group: 'io.netty', name: 'netty-transport', version:'4.1.27.Final'
+    compile group: 'io.netty', name: 'netty-codec', version:'4.1.27.Final'
+    compile group: 'io.netty', name: 'netty-handler', version:'4.1.27.Final'
+    compile group: 'io.netty', name: 'netty-transport-native-epoll', version:'4.1.27.Final', classifier:'linux-x86_64'
+}

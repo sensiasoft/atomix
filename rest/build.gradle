@@ -1,0 +1,15 @@
+
+description = 'Atomix Rest'
+dependencies {
+  compile project(':atomix-core')
+    compile group: 'io.vertx', name: 'vertx-core', version:'3.5.0'
+    compile group: 'org.jboss.resteasy', name: 'resteasy-vertx', version:'3.1.4.Final'
+    compile(group: 'org.jboss.resteasy', name: 'resteasy-jackson2-provider', version:'3.1.4.Final') {
+exclude(module: 'jackson-core')
+exclude(module: 'jackson-databind')
+exclude(module: 'jackson-annotations')
+    }
+  testCompile project(':atomix-raft')
+  testCompile project(':atomix-primary-backup')
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version:'3.0.7'
+}

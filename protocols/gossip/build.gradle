@@ -1,0 +1,5 @@
+
+description = 'Atomix Protocols :: Gossip'
+dependencies {
+  compile project(':atomix-primitive')
+}

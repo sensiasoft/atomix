@@ -1,0 +1,5 @@
+
+description = 'Atomix Protocols :: Raft'
+dependencies {
+  compile project(':atomix-primitive')
+}

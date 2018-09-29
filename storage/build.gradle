@@ -1,0 +1,5 @@
+
+description = 'Atomix Storage'
+dependencies {
+  compile project(':atomix-utils')
+}

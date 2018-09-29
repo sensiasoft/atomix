@@ -1,0 +1,10 @@
+
+description = 'Atomix Common Primitives'
+dependencies {
+  compile project(':atomix-cluster')
+  compile project(':atomix-primitive')
+  compile project(':atomix-gossip')
+  compile project(':atomix-raft')
+  compile project(':atomix-primary-backup')
+  compile project(':atomix-utils')
+}

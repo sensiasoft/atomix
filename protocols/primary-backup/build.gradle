@@ -1,0 +1,6 @@
+
+description = 'Atomix Protocols :: Primary Backup Protocol'
+dependencies {
+  compile project(':atomix-primitive')
+  compile project(':atomix-utils')
+}

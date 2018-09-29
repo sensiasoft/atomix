@@ -1,0 +1,26 @@
+rootProject.name = 'atomix'
+include ':atomix-agent'
+include ':atomix-cluster'
+include ':atomix-core'
+include ':atomix-dist'
+include ':atomix-primitive'
+include ':atomix-gossip'
+include ':atomix-primary-backup'
+include ':atomix-raft'
+include ':atomix-rest'
+include ':atomix-storage'
+include ':atomix-tests'
+include ':atomix-utils'
+
+project(':atomix-agent').projectDir = "$rootDir/agent" as File
+project(':atomix-cluster').projectDir = "$rootDir/cluster" as File
+project(':atomix-core').projectDir = "$rootDir/core" as File
+project(':atomix-dist').projectDir = "$rootDir/dist" as File
+project(':atomix-primitive').projectDir = "$rootDir/primitive" as File
+project(':atomix-gossip').projectDir = "$rootDir/protocols/gossip" as File
+project(':atomix-primary-backup').projectDir = "$rootDir/protocols/primary-backup" as File
+project(':atomix-raft').projectDir = "$rootDir/protocols/raft" as File
+project(':atomix-rest').projectDir = "$rootDir/rest" as File
+project(':atomix-storage').projectDir = "$rootDir/storage" as File
+project(':atomix-tests').projectDir = "$rootDir/tests" as File
+project(':atomix-utils').projectDir = "$rootDir/utils" as File

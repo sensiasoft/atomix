@@ -1,0 +1,7 @@
+
+description = 'Atomix Primitive API'
+dependencies {
+  compile project(':atomix-cluster')
+  compile project(':atomix-storage')
+  compile project(':atomix-utils')
+}

@@ -1,0 +1,6 @@
+
+description = 'Atomix Tests'
+dependencies {
+  compile project(':atomix-core')
+  compile project(':atomix-raft')
+}
